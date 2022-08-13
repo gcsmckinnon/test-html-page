@@ -1,13 +1,122 @@
+<!--
+    This is an HTML comment and is used to describe a block
+    of code so other developers have context and understanding
+    of what you were attempting to achieve, or into the reason
+    you built that block that way.
+
+    HTML (Hypertext Markup Language) is used to describe a
+    document so it can be understood by client applications
+    allowing them to structure the document accordingly.
+
+    It is made up of a series of predefined elements that
+    dictate meaning, functionality, and appearance. Content
+    elements can define paragraphs, emphasized or strong text,
+    links, lists, tables, and even images and videos. Layout
+    elements can aid in positioning content.
+
+    HTML is for structuring a web page, and should never be
+    relied on for aesthetic presentation
+ -->
+
+ <!-- 
+    An HTML tag is made up of a few characteristics:
+    - the < opening bracket
+    - the tag label (often lowercase, containing no spaces, and usually no symbols)
+    - the > closing bracket
+
+    There are non-self closing tags and self closing tags:
+    - <im-a-self-closing-tag/>
+    - <im-a-non-self-closing-tag></im-a-non-self-closing-tag>
+  -->
+
+<!--
+    The DOCTYPE describes the ruleset being utilized for your page.
+    This tells the browser what standardization you're using to render
+    your web page. The DOCTYPE is a mandatory tag.
+
+    The DOCTYPE element is predefined self closing tag
+ -->
 <!DOCTYPE html>
+
+<!-- 
+    The HTML element is used to denote the document you're describing.
+    It wraps your page meta information as well as your page content.
+
+    The HTML element is a non-self closing tag. In this particular example
+    you will notice the 'lang="en"' portion. This is known as an "attribute".
+    HTML elements can have attributes that help describe an element.
+    This info is invisible to the end user, and only available in the source code.
+ -->
 <html lang="en">
+    <!--
+        The head element is used to contain info about the page as well as include
+        other pieces of content or resources. This info is not visible to the
+        end user, but it is visible in the source code.
+     -->
     <head>
+        <!--
+            Meta elements are used to provide the browser key information in how
+            to render the page, what character set its using, as well as supported
+            browsers. Meta elements can also be used to provide info to other services
+            such as the OpenGraph and Twitter platforms. The info can be used to determine
+            how to render a shared version of the page. In addition meta elements can also
+            be used to provide publishing information regarding the page, such as who
+            authored it and a summary of the page's content.
+
+            Meta elements are self-closing tags.
+         -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My First Page</title>
+        <!-- 
+            The following two meta elements are provided to third-parties, such as search engines,
+            to help them generate an entry for the page.
+         -->
+        <meta name="author" content="Shaun McKinnon">
+        <meta name="description" content="A simple test page to better understand the basics behind HTML.">
+
+        <!-- 
+            This is the title of your web page. This is not visible to the end user in
+            the main content of the browser, but often can be seen as the label on the
+            tab in the browser (if the browser supports tabs). This is also the title chosen
+            when a user bookmarks the page. This title will also be provided to search engines
+            to help them generate an entry.
+         -->
+        <title>The HTML Test Page</title>
     </head>
 
+    <!-- 
+        This is the crux of your web page. The most important part. Anything within the body element
+        is used to build content for the end user. Some elements are used as specifically for layout
+        where as others are used to describe content. Understanding the semantic importance behind
+        the correct HTML to use, is important. This course will focus on using the correct semantic
+        element, and will encourage you to do the same through graded requirements.
+
+        The body element is a non-self closing tag.
+     -->
     <body>
-        <h1>Hello World</h1>
+        <!-- Let's build a small bio page -->
+
+        <!-- Step 1: Add a title with your name -->
+        <h1>Shaun McKinnon</h1>
+
+        <!-- Step 2: Add a sub heading -->
+        <h2>The Man; The Myth; The Legend!!!</h2>
+
+        <!-- Step 3: Add 3 or more paragraphs providing a small biography -->
+        <p>
+            In 1978 <em>I was <strong>born</strong></em>! I conquered pre-school, ruled grade school, and destroyed high school. After that, I exploded into the workforce!
+        </p>
+
+        <p>
+            I worked at Harvey's Restaurant as an extraordinary cook, rendering every order another perfect delicacy. I had to leave to pursue greater achievements. I became a low voltage installer and begun my adventure working for Future Shop, single-handedly bringing home after home into the 21st century.
+        </p>
+
+        <p>
+            Once I had fulfilled advancing the common savages with technical marvels, I turned back once again to education. I graduated with presidential honours and became a god amongst the people in the IT world. Shaun. The senior developer of all senior developers. The Man. The Myth. <strong>The Legend!</strong>
+        </p>
+
+        <!-- Step 4: Add an image -->
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQElfC9PN6XenA/profile-displayphoto-shrink_800_800/0/1600286193072?e=1665619200&v=beta&t=04oG9w-oTwtZtQbDVlNuyjOuTEO_1WP6z5oSBF9b_IM" alt="A picture of Shaun McKinnon; an old dude with glasses, obviously sitting in a car taking a selfie.">
     </body>
 </html>
